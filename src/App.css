@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 20px;
+    cursor: pointer;
 }
 
 .nav-section{
@@ -36,4 +37,31 @@
     border: none;
     outline: none;
     margin-left: 5px;
+}
+
+.card-img{
+    max-width: 100%;
+}
+
+.card-img:hover{
+    transform: scale(1.05);
+}
+
+
+.login-link{
+    padding-bottom: 5px;
+    text-decoration-line: none;
+    color: black;
+}
+
+.login-area{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img{
+    display: flex;
+    justify-content: flex-end;
 }
