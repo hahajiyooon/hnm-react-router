@@ -41,6 +41,8 @@
 
 .card-img{
     max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .card-img:hover{
@@ -64,4 +66,53 @@
 .product-img{
     display: flex;
     justify-content: flex-end;
+}
+
+.margin-l-20{
+    margin-left: 20px;
+}
+
+.padding-20{
+    margin: 20px;
+}
+
+.size-btn{
+    height: 40px;
+    width: 35%;
+}
+
+.order-btn{
+    height: 40px;
+    width: 100%;
+}
+
+.detail-area{
+    display: flex;
+    justify-content: center;
+}
+
+.product-area{
+    margin-top: 20px;
+}
+
+.product-title{
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.product-price{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product-input-label{
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.a-link{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
 }

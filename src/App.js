@@ -21,16 +21,14 @@ import PrivateRoute from './route/PrivateRoute';
 function App() {
   const [authenticate,setAuthenticate]=useState(false) //로그인되면 true로 바뀜
 
-
   //authenticate값이 바뀔때마다
   useEffect(() => {
     console.log("authenticate ",authenticate)
-
   },[authenticate])
 
   return (
     <div>
-      <Navbar/>
+      <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate}/>
       <Routes>
         <Route path="/" element={<ProductAll/>}/>
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate}/>}/>

@@ -5,8 +5,9 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate } from 'react-router-dom'
 
 //강의에서는(7-7강의 2:50) 로그인에 onClick 이벤트로 함수줘서 로그인페이지 호출함
-const Navbar = () => {
+const Navbar = ({authenticate, setAuthenticate}) => {
     const menuList = ["Women","Men","Baby","Kids","H&M HOME","Sport","Sale","지속가능성"]
+    console.log("authenticate", authenticate)
     
     const navigate = useNavigate()
     
@@ -29,10 +30,20 @@ const Navbar = () => {
   return (
     <div>
         <div>
-            <div className="login-button" onClick={goToLogin}>
-            <FontAwesomeIcon className="login-icon" icon={faUser} />
-            <div className="login-link">로그인</div>
-            </div>
+            { authenticate ? 
+            (
+                <div className="login-button" onClick={() => setAuthenticate(false)}>
+                <FontAwesomeIcon className="login-icon" icon={faUser} />
+                <div className="login-link">로그아웃</div>
+                </div>
+            ) : 
+            (
+                <div className="login-button" onClick={goToLogin}>
+                <FontAwesomeIcon className="login-icon" icon={faUser} />
+                <div className="login-link">로그인</div>
+                </div>
+            ) 
+            }
         </div>
         <div className="nav-section">
         <Link to="/">
