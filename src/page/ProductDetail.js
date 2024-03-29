@@ -49,7 +49,7 @@ const ProductDetail = ({size, setSize}) => {
             여러분도 환경 보호를 돕고 더욱 지속 가능한 패션을 만들 수 있습니다. 불필요한 옷이나 가정용 직물을 H&M 매장에 가지고 오면 다시 입을 수 있는 옷을 만드는 데 사용되거나 재사용 또는 재활용됩니다.
             </Accordion.Body>
             <Accordion.Body>
-            <a className="a-link" src="https://www2.hm.com/ko_kr/sustainability-at-hm/take-care/take-care.html">
+            <a className="a-link" href="https://www2.hm.com/ko_kr/sustainability-at-hm/take-care/take-care.html">
               오랫동안 새것처럼. 의류 관리 방법에 대해 자세히 알아보세요
             </a>
             </Accordion.Body>

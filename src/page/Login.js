@@ -19,15 +19,21 @@ const Login = ({setAuthenticate}) => {
 
 
   return (
-    <Container>
-      <Form onSubmit={(event) => loginUser(event)}>
+    <Container className='login-area'>
+      <Form onSubmit={(event) => loginUser(event)} className='col-4'>
+        <br/>
+        <Form.Label>Email address</Form.Label>
         <Form.Group className="mb-2" >
-          <Form.Control type="text" placeholder="ID" />
+          <Form.Control type="text" placeholder="Email address" />
         </Form.Group>
+        <Form.Label>Password</Form.Label>
         <Form.Group className="mb-2" >
           <Form.Control type="text" placeholder="Password" />
         </Form.Group>
-        <Button variant="danger" type="submit">Login</Button>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="로그인 상태 유지" />
+        </Form.Group>
+        <Button variant="primary" type="submit" className='col-12'>Login</Button>
       </Form>
     </Container>
   )
